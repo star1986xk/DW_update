@@ -1,0 +1,9 @@
+pyinstaller -w -i ./img/download.ico update.py
+
+             pathex=[os.path.join(DISTPATH, 'obf', 'temp'), ...],
+             binaries=[],
+             datas=[],
+             hiddenimports=['pytransform', ...],
+             hookspath=[os.path.join(DISTPATH, 'obf', 'temp'), ...],
+			 
+pyarmor pack -s update.spec update.py
